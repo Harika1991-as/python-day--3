@@ -1,0 +1,7 @@
+num1=int(input("enter the first number"))
+num2=int(input("enter the second number"))
+num1=str(num1)
+num2=str(num2)
+sum=int(num1,2)+int(num2,2)
+b=bin(sum)
+print("result =",b[2:])
