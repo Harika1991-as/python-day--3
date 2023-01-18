@@ -1,0 +1,48 @@
+num=input("Enter your ATM card number")
+balance=100000
+print("please select your language")
+print("1.English")
+print("2.Hindi")
+print("3.Telugu")
+print("4.Tamil")
+a=int(input("Enter your choice"))
+if(a==1):
+    print("The selected language is English")
+elif(a==2):
+    print("The selected language is Hindi")
+elif(a==3):
+    print("The selected language is Telugu")
+elif(a==4):
+    print("The selected language is Tamil")
+else:
+    print("Invalid input......Please select the correct option")
+pin=int(input("Please enter your ATM pin"))
+if(pin==1991):
+    print("Entered pin is correct")
+else:
+    print("Invalid pin......Please enter the correct pin")
+def ATM():
+    print("Select your choice")
+print("1.Withdrawal")
+print("2.Mini Ststement")
+print("3.Deposit")
+b=int(input("Enter your choice to be performed"))
+if(b==1):
+    c=int(input("Enter the amount to be withdrawn"))
+    balance=balance-c
+    print("Your balance after transaction is : ",balance)
+elif(b==2):
+    print("Your current balancs is :",balance)
+elif(b==3):
+    d=int(iput("Enter the amount you wish to deposit"))
+    balance=balance+d
+    print("Your balance after transaction is : ",balance)
+else:
+    print("Invalid input")
+print("1.Countinue")
+print("2.Exit")
+f=int(input("Enter your choice"))
+if(f==1):
+    print("Your choice is to countinue")
+elif(f==2):
+    print("Your choice is to exit")
