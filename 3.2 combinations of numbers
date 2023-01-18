@@ -1,0 +1,11 @@
+n=int(input("enter the number of numbers "))
+c=[]
+for a in range(n):
+    b=input("enter the element")
+    c.append(b)
+for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                if (i!=j and j!=k and i!=k):
+                    print(c[i], c[j], c[k])
+                      
